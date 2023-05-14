@@ -3,6 +3,7 @@
   background-color: var(--courses-bg);
 
   h2 {
+    margin: 0 0 24px;
     font-weight: 900;
     font-size: 32px;
     line-height: 56px;
@@ -59,4 +60,45 @@
   font-size: 16px;
   line-height: 19px;
   color: #0eb182;
+}
+
+@media screen and (max-width: 576px) {
+  .courses {
+    padding: 24px 0;
+  }
+
+  .courses__list {
+    flex-direction: column;
+
+    li {
+      max-width: 100%;
+    }
+
+    li + li {
+      margin-top: 24px;
+    }
+  }
+
+  .courses__link {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .courses {
+    h2 {
+      font-size: 23px;
+      line-height: 45px;
+    }
+  }
+}
+
+@media screen and (max-width: 434px) {
+  .courses {
+    .courses__desc {
+      font-size: 15px;
+      line-height: 19px;
+    }
+  }
 }
