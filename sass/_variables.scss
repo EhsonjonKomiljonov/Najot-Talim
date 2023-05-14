@@ -1,4 +1,5 @@
 :root {
+  --logo: url('../../images/logo.svg');
   --toggler-icon: url('../images/dark-icon.svg');
   --header-top-bg-color: #f1f0ee;
   --header-bg-color: #f1f0ee;
@@ -21,6 +22,7 @@
 }
 
 .dark {
+  --logo: url('../../images/logo-dark.svg');
   --toggler-icon: url('../images/light-icon.svg');
   --header-top-bg-color: #0f1826;
   --header-bg-color: #09111b;
