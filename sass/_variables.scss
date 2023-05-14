@@ -22,6 +22,10 @@
 	--hero-btn: #ba8d5b1a;
 	--hero-bg-position: calc(50% - 0px) calc(100% + 50px);
 	--toggler-hover: url('../images/dark-icon-white.svg');
+	--menu-bg: #F9F8F7;
+	--menu-overlay:rgba(0, 0, 0, 0.7);
+	--open-btn: url('../images/close.svg');
+	--close-btn: url('../images/close-btn.png');
 }
 
 .dark {
@@ -51,6 +55,11 @@
 	--hero-btn: #13e0b2e6;
 	--hero-bg-position: calc(50% - 24px) calc(100% + 8px);
 	--toggler-hover: url('../images/light-icon.svg');
+	--menu-bg:  #021923;
+	--menu-overlay: rgba(249, 248, 247, 0.2);
+	--open-btn: url('../images/open-light.svg');
+	--close-btn: url('../images/close-dark.png');
+	transition: all 0.3 ease;
 }
 
 // .dark {
@@ -60,3 +69,12 @@
 // 	--hero-card-text: #ffffff;
 // 	--main-text: #ffffff;
 // }
+
+@media only screen and (max-width: 1024px) {
+	:root {
+		--hero-bg-position: calc(50% - 100px) calc(100% + 50px);
+	}
+	.dark {
+		--hero-bg-position: calc(50% - 100px) calc(100% + 8px);
+	}
+}

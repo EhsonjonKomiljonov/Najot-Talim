@@ -22,6 +22,10 @@
   --hero-btn: #ba8d5b1a;
   --hero-bg-position: calc(50% - 0px) calc(100% + 50px);
   --toggler-hover: url("../images/dark-icon-white.svg");
+  --menu-bg: #F9F8F7;
+  --menu-overlay:rgba(0, 0, 0, 0.7);
+  --open-btn: url("../images/close.svg");
+  --close-btn: url("../images/close-btn.png");
 }
 
 .dark {
@@ -51,8 +55,21 @@
   --hero-btn: #13e0b2e6;
   --hero-bg-position: calc(50% - 24px) calc(100% + 8px);
   --toggler-hover: url("../images/light-icon.svg");
+  --menu-bg: #021923;
+  --menu-overlay: rgba(249, 248, 247, 0.2);
+  --open-btn: url("../images/open-light.svg");
+  --close-btn: url("../images/close-dark.png");
+  transition: all 0.3 ease;
 }
 
+@media only screen and (max-width: 1024px) {
+  :root {
+    --hero-bg-position: calc(50% - 100px) calc(100% + 50px);
+  }
+  .dark {
+    --hero-bg-position: calc(50% - 100px) calc(100% + 8px);
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -977,7 +994,7 @@ p {
   width: 100%;
   padding: 17px 0;
   background-color: var(--header-top-bg-color);
-  z-index: 10;
+  z-index: 5;
 }
 
 .header-top-inner {
@@ -1113,4 +1130,171 @@ p {
 .header-bottom-link:active {
   background: #ba8d5b;
   color: #ffffff;
+}
+
+.open-menu {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: var(--open-btn);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-bottom {
+    background-image: none;
+  }
+  .header-bottom-inner {
+    padding: 45px 0 28px;
+    text-align: start;
+  }
+  .header-title {
+    padding: 0;
+  }
+  .logo {
+    max-width: 185px;
+    background-size: contain;
+  }
+  .header-title {
+    max-width: 100%;
+    font-size: 24px;
+    line-height: 36px;
+    max-width: 180px;
+    margin: 0 0 12px;
+  }
+  .header-text {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 24px;
+  }
+  .header-bottom-link {
+    padding: 8px 33px;
+  }
+  .nav {
+    display: none;
+  }
+  #header-top-link2 {
+    margin-left: auto;
+    margin-right: 12px;
+  }
+  #header-top-link {
+    display: none;
+  }
+  .nav-item + .nav-item {
+    margin-left: 0;
+  }
+  .header-top-link {
+    background-color: #bd8f5b;
+    border: 1px solid #f1f0ee;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+  }
+  .header-top-link:hover {
+    border: 1px solid #bd8f5b;
+  }
+  .header-top-link:hover {
+    background-color: #f5f5f5;
+    border: 1px solid #bd8f5b;
+    color: #ba8d5b;
+  }
+  .header-top-link:active {
+    background-color: #ba8d5b;
+    color: #ffffff;
+  }
+  .nav-mobile {
+    display: block;
+  }
+  .open-menu {
+    display: block;
+  }
+}
+.open-menu {
+  display: none;
+}
+
+.header-top-link {
+  padding: 7px 20px;
+}
+
+.nav-mobile {
+  display: none;
+  transition: all 0.2s ease;
+  width: 100%;
+  position: fixed;
+  right: -550px;
+  top: 0;
+  z-index: 6;
+  height: 100vh;
+  background-color: var(--menu-overlay);
+}
+.nav-mobile ul {
+  width: 60%;
+  position: relative;
+  padding: 110px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--menu-bg);
+  height: 100vh;
+  margin-left: auto;
+  margin-right: 0;
+}
+.nav-mobile ul li {
+  margin: 0 0 30px;
+}
+.nav-mobile ul li .nav-link {
+  font-size: 24px;
+}
+.nav-mobile .header-top-mode {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  padding: 25px;
+  margin: 0;
+}
+.nav-mobile .menu-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 20px;
+  margin: 0;
+  background-color: transparent;
+  background-image: var(--close-btn);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+}
+
+.open {
+  transition: all 0.2s ease;
+  right: 0;
+}
+
+@media only screen and (max-width: 380px) {
+  .logo {
+    max-width: 150px;
+  }
+  .header-top-link {
+    padding: 3px 14px;
+  }
+  .nav-mobile ul {
+    padding: 100px 20px;
+  }
+  .menu-close {
+    padding: 15px !important;
+    right: 10px !important;
+  }
+  .header-top-mode {
+    padding: 15px !important;
+    left: 20px !important;
+  }
 }/*# sourceMappingURL=main.css.map */
