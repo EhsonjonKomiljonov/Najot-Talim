@@ -6,6 +6,7 @@
   background-color: var(--contact-inner-bg);
   display: flex;
   align-items: center;
+  border-radius: 20px;
 }
 
 .contact__right {
@@ -76,7 +77,6 @@
   border-radius: 100px;
   margin-bottom: 32px;
   padding-left: 55px;
-  position: relative;
   background-color: var(--contact-bg);
   color: var(--main-text);
   &::before {
@@ -116,7 +116,7 @@
 }
 
 .contact__link {
-  margin-left: 10px;  
+  margin-left: 10px;
 }
 
 .contact__submit__btn {
@@ -147,7 +147,7 @@
   .contact__inner {
     justify-content: center;
   }
-  
+
   .contact__left img {
     display: none;
   }
