@@ -1,14 +1,18 @@
 :root {
-    --main-text: #000000;
-    --toggler-icon: url('../images/dark-icon.svg');
-    --header-top-bg-color: #F1F0EE;
-    --header-bg-color: #F1F0EE;
-    --header-bg-img: url('../images/hero-bgi.png');
-    --mode-btn-bg:#F5F5F5;
+  --main-text: #000000;
+  --toggler-icon: url('../images/dark-icon.svg');
+  --header-top-bg-color: #f1f0ee;
+  --header-bg-color: #f1f0ee;
+  --header-bg-img: url('../images/hero-bgi.png');
+  --mode-btn-bg: #f5f5f5;
   --courses-bg: #f9f8f7;
   --courses-desc: #607987;
   --courses-item-border: 1px solid #607987;
   --hero-card-text: #607987;
+  --contact-bg: #ffffff;
+  --contact-inner-bg: #f9f8f7;
+  --contact-label: #000;
+  --contact-btn: #fff;
 }
 
 .dark {
@@ -16,10 +20,13 @@
   --courses-desc: #bbe7ff;
   --courses-item-border: 1px solid #bbe7ff;
   --hero-card-text: #ffffff;
-  --main-text: #FFFFFF;
+  --main-text: #ffffff;
   --toggler-icon: url('../images/dark-icon.svg');
-  --header-top-bg-color: ##0F1826;
-  --header-bg-color: #09111B;
+  --header-top-bg-color: ##0f1826;
+  --header-bg-color: #09111b;
   --header-bg-img: url('../images/hero-bgi-dark.png');
   --mode-btn-bg: #272727;
+  --contact-bg: #021923;
+  --contact-inner-bg: #f9f8f73b;
+  --contact-label: #ba8d5b;
 }
