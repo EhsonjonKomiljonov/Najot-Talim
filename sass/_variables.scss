@@ -31,6 +31,10 @@
   --insta: url('../images/insta-icon.svg');
   --lk: url('../images/lk-icon.svg');
   --footer-drop-down: url('../../images/arrow-down.svg');
+  --blog-bg: #fff;
+  --blog-text: #00000059;
+  --views-icon: url('../images/views-icon.svg');
+  
 }
 
 .dark {
@@ -69,6 +73,9 @@
   --insta: url('../images/insta-icon-dark.svg');
   --lk: url('../images/lk-icon-dark.svg');
   --footer-drop-down: url('../../images/arrow-down-dark.svg');
+  --blog-bg: #09111b;
+  --blog-text: #ffffff;
+  --views-icon: url('../images/views-icon-dark.svg');
 }
 
 @media only screen and (max-width: 1024px) {

@@ -72,8 +72,17 @@ renderJobs();
 const modeToggler = document.querySelector('.header-top-mode');
 const body = document.querySelector('body');
 
+if (localStorage.getItem('mode') == 'dark') {
+  body.classList.add('dark');
+}
 modeToggler.addEventListener('click', () => {
-  body.classList.toggle('dark');
+  if (localStorage.getItem('mode') == 'light') {
+    localStorage.setItem('mode', 'dark');
+    body.classList.add('dark');
+  } else {
+    body.classList.remove('dark');
+    localStorage.setItem('mode', 'light');
+  }
 });
 
 const firstVideo = document.querySelector('.first');
