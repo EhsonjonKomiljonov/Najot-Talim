@@ -2,9 +2,117 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Blog</title>
+    <link
+      rel="stylesheet"
+      href="./css/main.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <header class="site-header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top-inner">
+            <a
+              href="./index.html"
+              class="logo"
+            ></a>
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a
+                    href="./index.html"
+                    class="nav-link"
+                    >Asosiy</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="./courses.html"
+                    class="nav-link"
+                    >Kurslar</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <button
+              class="header-top-link"
+              id="header-top-link2"
+            >
+              Kirish
+            </button>
+            <button
+              class="header-top-mode"
+              id="header-top-link"
+            ></button>
+            <button class="open-menu"></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="nav-mobile">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a
+            href="./index.html"
+            class="nav-link"
+            >Asosiy</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="./courses.html"
+            class="nav-link"
+            >Kurslar</a
+          >
+        </li>
+        <button
+          class="header-top-mode"
+          id="header-top-mode"
+        ></button>
+        <button class="menu-close"></button>
+      </ul>
+    </div>
+    <div class="c-navigation blog__hero">
+      <div class="container">
+        <a
+          href="./index.html"
+          class="navigation"
+          >→</a
+        >
+      </div>
+    </div>
+    <div class="c-hero blog__hero">
+      <div class="container">
+        <div class="c-hero-bottom blog__btns">
+          <button class="c-hero-btn">Barchasi</button>
+          <button class="c-hero-btn">Bitiruv marosimi</button>
+          <button class="c-hero-btn">Master-klass</button>
+          <button class="c-hero-btn">Musobaqa</button>
+          <button class="c-hero-btn">Dasturlash</button>
+          <button class="c-hero-btn">Najot Quiz</button>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <section class="blog">
+        <div class="container">
+          <div class="blog__inner">
+            <div class="blog__cards"></div>
+            <button class="blog__btn">Ko'proq ko'rish</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/blog.js"></script>
+  </body>
 </html>
