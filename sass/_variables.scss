@@ -2,12 +2,26 @@
   --courses-bg: #f9f8f7;
   --courses-desc: #607987;
   --courses-item-border: 1px solid #607987;
+  --bg-hero: #fff;
   --hero-card-text: #607987;
+  --hero-title: #0f1826;
+  --hero-card-icon1: url('../../images/online-academy.svg');
+  --hero-card-icon2: url('../../images/master-work.svg');
+  --hero-card-icon3: url('../../images/not-just-course.svg');
+  --hero-card-icon4: url('../../images/increative-lessons.svg');
+  --hero-btn: #ba8d5b1a;
 }
 
 .dark {
   --courses-bg: #09111b;
   --courses-desc: #bbe7ff;
   --courses-item-border: 1px solid #bbe7ff;
+  --bg-hero: #021923;
   --hero-card-text: #ffffff;
+  --hero-title: #fff;
+  --hero-card-icon1: url('../../images/online-academy-dark.svg');
+  --hero-card-icon2: url('../../images/master-work-dark.svg');
+  --hero-card-icon3: url('../../images/not-just-course-dark.svg');
+  --hero-card-icon4: url('../../images/increative-lessons-dark.svg');
+  --hero-btn: #13e0b2e6;
 }
