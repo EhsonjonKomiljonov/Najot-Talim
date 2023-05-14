@@ -29,13 +29,13 @@
     background-color: #c9c9c9;
     border-radius: 8px;
     transition: all 0.4s ease-in-out;
+    padding: 16px 12px;
     &:hover {
       background-color: #fff;
       box-shadow: 0 2px 18px 3px rgba(0, 0, 0, 0.05);
     }
   }
   img {
-    padding: 16px 12px;
     filter: grayscale(100%) brightness(50%);
     transition: filter 0.5s ease;
 
@@ -81,5 +81,19 @@
     li {
       text-align: center;
     }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  
+  .jobs__list {
+    gap: 20px;
+  }
+
+  .jobs__list li {
+    padding: 0;
+  }
+  .jobs__title {
+    font-size: 30px;
   }
 }
