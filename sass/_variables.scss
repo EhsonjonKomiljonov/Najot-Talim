@@ -1,0 +1,17 @@
+:root {
+    --main-text: #000000;
+    --toggler-icon: url('../images/dark-icon.svg');
+    --header-top-bg-color: #F1F0EE;
+    --header-bg-color: #F1F0EE;
+    --header-bg-img: url('../images/hero-bgi.png');
+    --mode-btn-bg:#F5F5F5;
+}
+
+.dark {
+    --main-text: #FFFFFF;
+    --toggler-icon: url('../images/dark-icon.svg');
+    --header-top-bg-color: ##0F1826;
+    --header-bg-color: #09111B;
+    --header-bg-img: url('../images/hero-bgi-dark.png');
+    --mode-btn-bg: #272727;
+}
