@@ -79,13 +79,7 @@
   padding-left: 55px;
   background-color: var(--contact-bg);
   color: var(--main-text);
-  &::before {
-    content: '+998';
-    position: absolute;
-    color: var(--main-text);
-    width: 38px;
-    height: 24px;
-  }
+  
   &:focus {
     outline: none;
   }
@@ -99,7 +93,7 @@
     color: var(--main-text);
     width: 38px;
     height: 24px;
-    z-index: 5;
+    z-index: 2;
     top: calc(50% - 9px);
     left: 14px;
   }
