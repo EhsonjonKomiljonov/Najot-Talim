@@ -189,6 +189,11 @@
 }
 
 @media screen and (max-width: 630px) {
+
+  .comments {
+    padding: 40px 0 40px ;
+  }
+
   .comments__list {
     width: 215px;
     margin-left: auto;

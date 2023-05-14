@@ -141,6 +141,12 @@
   .hero__card {
     width: 100%;
     max-width: 450px;
+
+    .hero__card__content {
+      width: 100%;
+      max-width: 360px;
+      margin-left: 30px;
+    }
   }
 }
 
@@ -215,8 +221,12 @@
 @media screen and (max-width: 480px) {
   .hero__cards {
     grid-template-columns: repeat(1, 1fr);
-
     grid-template-rows: 150px 150px 1fr 1fr;
+
+    .hero__card__content {
+      max-width: 300px;
+      margin-left: 26px;
+    }
   }
 }
 
@@ -231,8 +241,11 @@
 @media screen and (max-width: 417px) {
   .hero__cards {
     grid-template-columns: repeat(1, 1fr);
-
     grid-template-rows: 160px 170px 1fr 1fr;
+
+    .hero__card__content {
+      max-width: 230px;
+    }
   }
 }
 
@@ -287,6 +300,14 @@
 
     &:nth-child(3) {
       margin-top: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .hero__card {
+    .hero__card__content {
+      max-width: 190px;
     }
   }
 }
