@@ -7,17 +7,8 @@ modeToggler.addEventListener('click', () => {
 
 const modeTogglerMobile = document.querySelector('#header-top-mode');
 
-if (localStorage.getItem('mode') == 'dark') {
-  body.classList.add('dark');
-}
-modeToggler.addEventListener('click', () => {
-  if (localStorage.getItem('mode') == 'light') {
-    localStorage.setItem('mode', 'dark');
-    body.classList.add('dark');
-  } else {
-    body.classList.remove('dark');
-    localStorage.setItem('mode', 'light');
-  }
+modeTogglerMobile.addEventListener('click', () => {
+  body.classList.toggle('dark');
 });
 
 const openMenu = document.querySelector('.open-menu');
